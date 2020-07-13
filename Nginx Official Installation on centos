@@ -1,0 +1,27 @@
+a)
+Adding the Official NGINX Repository
+For us to install NGINX using yum we will add the official NGINX repository by creating a file at /etc/yum.repos.d/nginx.repo:
+$ sudo vim /etc/yum.repos.d/nginx.repo
+
+b)
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/7/$basearch/
+gpgcheck=0
+enabled=1
+
+Add this to above place - vim /etc/yum.repos.d/nginx.repo
+
+c)
+Run sudo yum update
+
+d)
+Installing NGINX
+yum install nginx -y
+
+e)
+Starting and Enabling NGINX
+
+systemctl start nginx && systemctl enable nginx
+
+Reboot the server so all config takes place properly then see if you are able to get nginx default page in public IP of server.
