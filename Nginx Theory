@@ -1,0 +1,18 @@
+Nginx Theory
+==============
+
+a)Nginx is a high performance webserver.
+b) Originnaly open sourced in 2004.
+c) Nginx INC founded and later nginx plus was introduced.
+d) Some advantages of using nginx
+- High performance
+- Reverse proxy (SSL and TLS termination) and content caching.
+- Load balancer
+
+================================
+
+What is HTTP - HTTP stands for hyper text transfer protocol . It uses port number 80 . This is application layer protocol .
+Its build on TCP/IP protocol which is layer 3 transport layer protocol.
+HTTP is the language of websites through which they define the format of sending of information between web clients which is browser and web servers.
+
+What is HTTPS - HTTP secure.Encrypted communication between web clients and servers using TLS and SSL.
