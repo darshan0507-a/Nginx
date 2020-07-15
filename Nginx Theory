@@ -16,3 +16,15 @@ Its build on TCP/IP protocol which is layer 3 transport layer protocol.
 HTTP is the language of websites through which they define the format of sending of information between web clients which is browser and web servers.
 
 What is HTTPS - HTTP secure.Encrypted communication between web clients and servers using TLS and SSL.
+
+Nginx Imp path to keep in mind:
+==============================
+- Default nginx configuration - /etc/nginx/nginx.conf
+- Default data path from where default nginx webpage loads - /usr/share/nginx/html
+html.index loads when nginx configured successfully.
+50x.html loads when there is error.
+- Error logs default location - /var/log/nginx/error.log
+- Pid default location - /var/run/nginx.pid
+- Main virtual host configuration which loads all .conf files - /etc/nginx/conf.d/default.conf
+If you delete default.conf then your default nginx webpage will not load because from this conf file only it listens to the port on which it will load and other config also.
+
