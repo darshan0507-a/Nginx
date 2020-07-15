@@ -6,3 +6,7 @@ $ docker container exec <container-name> nginx -s reload
 
 b) To test nginx 
 nginx -t
+
+c) How to curl multiple webpages in nginx
+curl --header "Host: example.com" localhost
+curl --header "Host: url" localhost
