@@ -1,0 +1,5 @@
+Nginx command 
+=============
+
+a) how to reload nginx service inside docker container
+$ docker container exec <container-name> nginx -s reload
