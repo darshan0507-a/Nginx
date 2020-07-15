@@ -10,3 +10,12 @@ nginx -t
 c) How to curl multiple webpages in nginx
 curl --header "Host: example.com" localhost
 curl --header "Host: url" localhost
+
+d) Install htpasswd uitiltu on ubuntu 
+apt-get install apache2-utils
+
+e) To create htpasswd file and add password
+htpasswd -c /etc/nginx/.htpasswd admin
+htpasswd -create /etc/nginx/.htpasswd <user>
+
+
