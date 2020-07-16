@@ -1,0 +1,11 @@
+server {                           // Directive
+    listen 80 default_server;//listen on port 80 which is default for HTTP , we can also use (listen 80 <PublicIP>:8080)
+    server_name _ ; // Keeping the server name blank means we dont know whats gonna be the server name . We can use flavours here like example.com, www.example.com
+    root /usr/share/nginx/html; // It means root data from where contents will be displayed on browser
+    location = /admin.html {             // TO put a admin lock so we can control the config which only admin can see.
+          auth_basic "Login required";  
+          auth_basic_user_file /etc/nginx/.htpasswd;
+}
+    error_page 500 501 502 503 504 505 /50x.html; // To display error pages
+    error_page 404 /404.html; // To display errorpages
+}
