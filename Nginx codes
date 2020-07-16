@@ -1,5 +1,7 @@
 server {
-    listen 3.134.89.55:8080;
-    server_name localhost;
-    root /usr/share/nginx/html;
+
+    listen 80;
+    server_name www.example.com example.com
+    root /var/www/example.com/html
+
 }
