@@ -9,3 +9,22 @@ server {                           // Directive
     error_page 500 501 502 503 504 505 /50x.html; // To display error pages
     error_page 404 /404.html; // To display errorpages
 }
+
+
+=================================================================
+Modified
+==========
+server {
+    listen 80 default_server;
+    listen 443 ssl;
+    server_name _ ;
+    root /usr/share/nginx/html;
+    ssl_certificate /etc/nginx/ssl/public.pem; // ssl certificate mapping
+    ssl_certificate_key /etc/nginx/ssl/private.key;// ssl certificate mapping
+    location = /admin.html {
+          auth_basic "Login required";
+          auth_basic_user_file /etc/nginx/.htpasswd;
+}
+    error_page 500 501 502 503 504 505 /50x.html;
+    error_page 404 /404.html;
+}
