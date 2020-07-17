@@ -19,3 +19,11 @@ req - We’re making a certificate request to OpenSSL
 
 With the public and private keys generated, we’re now able to move on and add SSL/TLS/HTTPS support to our web server.
 
+After doing this you need to add below modules and give path to keys .
+ssl_certificate /etc/nginx/ssl/public.pem;
+ssl_certificate_key /etc/nginx/ssl/private.key;
+
+Now, in the terminal try yusing https.
+curl -k https://localhost
+
+If you see certificates generating , you are good. This is complete method of generating SSL certificate and test them.
