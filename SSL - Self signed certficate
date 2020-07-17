@@ -17,3 +17,5 @@ req - We’re making a certificate request to OpenSSL
 -keyout /etc/nginx/ssl/private.key - File to write the private key to
 -out /etc/nginx/ssl/public.pem - Output file for public portion of key
 
+With the public and private keys generated, we’re now able to move on and add SSL/TLS/HTTPS support to our web server.
+
