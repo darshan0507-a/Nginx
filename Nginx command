@@ -18,4 +18,12 @@ e) To create htpasswd file and add password
 htpasswd -c /etc/nginx/.htpasswd admin
 htpasswd -create /etc/nginx/.htpasswd <user>
 
+f) To know version of nginx
+nginx -v
+
+g) TO see a complete list of module came with nginx
+nginx -V
+
+h) To see list of module in clean way
+nginx -V 2>&1 | tr -- - '\n' | grep _module
 
